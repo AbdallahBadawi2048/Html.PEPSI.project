@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,700&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 300vh;
+    background-color: blue;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+.Nav {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.Nav-container {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1400px;
+    width: 100%;
+    height: 80px;
+}
+
+.nav-logo img {
+    margin-top: 5px;
+    margin-left: 20px;
+    height: 35px;
+    width: 90px;
+}
+
+.Nav-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+}
+
+.Nav-item {
+    height: 80px;
+}
+
+.Nav-links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 100%;
+    text-decoration: none;
+    margin-right: 250px;
+}
+
+.Nav-but a {
+    color: #fff;
+    padding: 2px 5px 5px 5px;
+    border: 2px solid #fff;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.Nav-links:hover {
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+.Nav-but :hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.Home {
+    background-color: blue;
+    display: flex;
+    justify-content: space-around;
+    height: 600px;
+    align-items: center;
+}
+
+.H1 {
+    flex-basis: calc(40% - 40px);
+}
+
+.H1 h1 {
+    color: #fff;
+    font-size: 40px;
+}
+
+.H1 p {
+    color: #fff;
+}
+
+.H2 {
+    flex-basis: calc(40% - 60px);
+    justify-content: center;
+    align-items: center;
+}
+
+.H2 img {
+    height: 350px;
+    width: 250px;
+    margin-left: 400px;
+    margin-top: 50px;
+}
+
+.H2 {
+    animation: index infinite 1s alternate ease-in-out both;
+}
+
+@keyframes index {
+    0% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rotate(10deg);
+    }
+}
+
+@media (min-width:1px) and (max-width: 991.9px) {
+    .Home {
+        flex-wrap: wrap;
+    }
+    .Nav {
+        padding: 0px 10px;
+    }
+    .H2 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.Products {
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    grid-template-rows: repeat(4, 110px);
+    row-gap: 2px;
+    column-gap: 10px;
+    max-height: 500px;
+    background-color: #fff;
+    justify-content: center;
+}
+
+.Pro1 {
+    margin-top: 50px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    position: relative;
+}
+
+.Pro2 {
+    margin-top: 50px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    position: relative;
+}
+
+.Pro3 {
+    margin-top: 50px;
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+    position: relative;
+}
+
+.Pro4 {
+    margin-top: 50px;
+    grid-column: 4 / 5;
+    grid-row: 1 / 3;
+    position: relative;
+}
+
+.Pro5 {
+    margin-top: 50px;
+    grid-row: 3 / 5;
+    position: relative;
+}
+
+.Pro6 {
+    margin-top: 50px;
+    grid-column: 2 / 3;
+    grid-row: 3 / 5;
+    position: relative;
+}
+
+.Pro7 {
+    margin-top: 50px;
+    grid-column: 3 / 4;
+    grid-row: 3 / 5;
+    position: relative;
+}
+
+.CS {
+    margin-top: 50px;
+    grid-column: 4 / 5;
+    grid-row: 3 / 5;
+    border-radius: 10px;
+    background-color: red;
+}
+
+.CS h3 {
+    color: #fff;
+    margin-top: 80px;
+    margin-left: 80px;
+}
+
+.Products>div {
+    border: 1px solid rgb(208 208 208);
+    background-color: whitesmoke;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+}
+
+.Products>div>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.Products div:hover img {
+    transform: rotateZ(40deg);
+    -webkit-transform: rotateZ(40deg);
+    -moz-transform: rotateZ(40deg);
+    -ms-transform: rotateZ(40deg);
+    -o-transform: rotateZ(40deg);
+    transition: 0.5s;
+}
+
+.Products>div>span {
+    color: #fff;
+    padding: 5px;
+    border-radius: 100%;
+    background-color: blue;
+    position: absolute;
+    top: 0px;
+    z-index: 998;
+    left: 0;
+}
+
+.from {
+    background-color: blue;
+    height: 100vh;
+}
+
+.from form {
+    margin-top: 40px;
+    margin-left: 20px;
+    color: #fff;
+}
+
+form,
+input {
+    width: 98%;
+    padding: 4px 8px;
+    border-radius: 10px;
+    height: 30px;
+}
+
+textarea {
+    width: 98%;
+    padding: 4px 8px;
+    border-radius: 10px;
+    height: 100px;
+}
+
+button {
+    background-color: blue;
+    border-radius: 3px;
+    border: 1.5px solid #fff;
+    color: #fff;
+    padding: 5px;
+}
